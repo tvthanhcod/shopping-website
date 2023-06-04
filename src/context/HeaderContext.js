@@ -8,7 +8,9 @@ const HeaderContext = ({ children }) => {
 
     const [openNavbar, setOpenNavbar] = useState(false)
     const [showEventDetail, setShowEventDetail] = useState(false)
+    const [openSearch, setOpenSearch] = useState(false)
     const [dataEventDetail, setDataEventDetail] = useState([])
+    const [inputSearch, setInputSearch] = useState('')
 
 
     const options = {
@@ -17,7 +19,11 @@ const HeaderContext = ({ children }) => {
         showEventDetail,
         setShowEventDetail,
         dataEventDetail,
-        setDataEventDetail
+        setDataEventDetail,
+        inputSearch,
+        setInputSearch,
+        openSearch,
+        setOpenSearch
     }
 
     return (
