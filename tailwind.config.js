@@ -25,6 +25,8 @@ module.exports = {
       },
       colors: {
         modal: 'rgba(0, 0, 0, 0.3)',
+        yellowFooter: '#ede734',
+        grayFooter: '#282c31',
       },
       animation: {
         'toBottom': 'moveToBottom .4s linear',
