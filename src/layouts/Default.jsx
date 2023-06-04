@@ -1,15 +1,22 @@
-import Header from '../parts/Header'
+import Header from '../parts/Header/Header'
 import Footer from '../parts/Footer'
+import HeaderEventDetail from '../parts/Header/HeaderEventDetail'
+import { HeaderProvider } from '../context/HeaderContext'
+import { useContext } from 'react'
 
 const DefaultLayout = ({ children }) => {
+
+    const { showEventDetail, dataEventDetail } = useContext(HeaderProvider)
+
     return (
-        <>
-        <header><Header /></header>
-        <main>
-            {children}
-        </main>
-        <footer><Footer /></footer>
-        </>
+        <div className='content-wrapper max-w-7xl h-screen mx-auto relative'>
+            <Header />
+            <main>
+                {children}
+            </main>
+            <Footer />
+            {showEventDetail && <HeaderEventDetail data={dataEventDetail} />}
+        </div>
     )
 
 }
