@@ -2,12 +2,15 @@ import { Link } from "react-router-dom"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai"
 import { FaTiktok } from "react-icons/fa"
+import Button from "../components/Button"
 const Footer = () => {
     return (
-        <footer className="w-full h-auto">
-            <div className="become-member w-full h-[132px] flex justify-center items-center bg-yellowFooter">
+        <footer className="w-full h-auto mt-7">
+            <div className="become-member w-full h-[132px] flex justify-center items-center bg-yellowFooter flex-wrap md:flex-nowrap">
                 <p className="title uppercase text-2xl font-bold">become a member & get 15% off</p>
-                <div className="button"></div>
+                <div className="button w-[221px] h-[50px] ml-7">
+                    <Button title="sign up for free" link="/login" />
+                </div>
             </div>
             <div className="top w-full h-auto py-3 hidden md:block">
                 <div className="main w-full h-auto flex px-28">
