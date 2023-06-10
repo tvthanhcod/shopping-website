@@ -33,7 +33,7 @@ const Header = () => {
                 <div className="bar cursor-pointer w-[120px] h-full text-2xl flex justify-start items-center text-black md:hidden" onClick={() => setOpenNavbar(true)}>
                     <HiViewList />
                 </div>
-                <div className="logo w-[60px] h-[38px]">
+                <div className="logo w-[60px] h-[38px] cursor-pointer" onClick={() => handleNavigate('/')}>
                     <img className="w-full h-full object-cover" src="https://img.freepik.com/free-icon/adidas_318-565831.jpg" alt="ADIDAS" />
                 </div>
                 <div className="header__bot-content flex flex-col justify-between">
