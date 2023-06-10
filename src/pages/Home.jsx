@@ -126,23 +126,23 @@ const Home = () => {
                     <h2 className="title uppercase text-5xl font-bold mb-5">who are you shopping for</h2>
                     <div className="content w-full h-auto overflow-hidden">
                         <SliderWithSlick setting={settingShoppingForHome}>
-                            <div className="grid grid-flow-row gap-5">
+                            <div className="content-item">
                                 <div className="img w-[398px] h-[448px]">
                                     <img className="w-full h-full object-cover" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/enVN/Images/nav-women-d_tcm212-819363.jpg" alt="ADIDAS" />
                                 </div>
-                                <p className="name text-3xl text-black uppercase font-bold">Women</p>
+                                <p className="name text-3xl text-black uppercase font-bold mt-5">Women</p>
                             </div>
-                            <div className="grid grid-flow-row gap-5">
+                            <div className="content-item">
                                 <div className="img w-[398px] h-[448px]">
                                     <img className="w-full h-full object-cover" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/enVN/Images/nav-men-d_tcm212-819364.jpg" alt="ADIDAS" />
                                 </div>
-                                <p className="name text-3xl text-black uppercase font-bold">Men</p>
+                                <p className="name text-3xl text-black uppercase font-bold mt-5">Men</p>
                             </div>
-                            <div className="grid grid-flow-row gap-5">
+                            <div className="content-item">
                                 <div className="img w-[398px] h-[448px]">
                                     <img className="w-full h-full object-cover" src="https://brand.assets.adidas.com/image/upload/f_auto,q_auto,fl_lossy/if_w_gt_800,w_800/enVN/Images/nav-kids-d_tcm212-819367.jpg" alt="ADIDAS" />
                                 </div>
-                                <p className="name text-3xl text-black uppercase font-bold">Kids</p>
+                                <p className="name text-3xl text-black uppercase font-bold mt-5">Kids</p>
                             </div>
                         </SliderWithSlick>
                     </div>
