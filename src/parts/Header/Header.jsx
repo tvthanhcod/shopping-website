@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom"
 import { useContext } from "react"
 
 import { BsBag } from "react-icons/bs"
+import { TbMoodEmpty } from "react-icons/tb"
 import { AiOutlineHeart, AiOutlineSearch } from "react-icons/ai"
 import { BiUser } from "react-icons/bi"
 import { HiViewList } from "react-icons/hi"
@@ -23,6 +24,8 @@ const Header = () => {
     const handleNavigate = (to) => {
         navigate(`${to}`)
     }
+
+    const isEmptyCart = true
 
     return (
         <header className="border-b">
@@ -60,8 +63,11 @@ const Header = () => {
                         <div className="search-icon-responsive w-[48px] h-[48px] cursor-pointer flex justify-center items-center text-xl md:hidden" onClick={() => setOpenSearch(true)}>
                             <AiOutlineSearch />
                         </div>
-                        <div className="cart w-[48px] h-[48px] cursor-pointer flex justify-center items-center text-xl">
+                        <div className="cart w-[48px] h-[48px] cursor-pointer flex justify-center items-center text-xl group relative" onClick={() => handleNavigate('/cart')}>
                             <BsBag />
+                            {isEmptyCart &&
+                                <div className="absolute top-[105%] right-0 w-[310px] h-[60px] rounded-[2px] bg-white text-black hidden justify-center items-center font-2xl font-extrabold uppercase shadow-shadow1 group-hover:flex z-[100]"><TbMoodEmpty /><span className="ml-2">your cart is empty</span></div>
+                            }
                         </div>
                     </div>
                 </div>
