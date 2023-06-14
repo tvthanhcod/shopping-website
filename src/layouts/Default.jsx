@@ -1,5 +1,5 @@
 import Header from '../parts/Header/Header'
-import Footer from '../parts/Footer'
+import Footer from '../parts/Footer/Footer'
 import HeaderEventDetail from '../parts/Header/HeaderEventDetail'
 import { HeaderProvider } from '../context/HeaderContext'
 import { useContext } from 'react'

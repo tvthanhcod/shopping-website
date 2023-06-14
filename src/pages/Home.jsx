@@ -14,11 +14,11 @@ const Home = () => {
     //fake data tablist 
     const data = [
         { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
-        { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
-        { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
-        { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
-        { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
-        { id: 1, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
+        { id: 2, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
+        { id: 3, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
+        { id: 4, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
+        { id: 5, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
+        { id: 6, avatar: "https://assets.adidas.com/images/w_600,f_auto,q_auto/3315f665bfff4ba88a81aaaa01678cfb_9366/Rivalry_Low_Shoes_White_FV4225_01_standard.jpg", name: "Rivalry Low Shoes", category: "Men Originals", price: "2000000", state: "Early access" },
     ]
     const [tagSelected, setTagSelected] = useState({ tagName: 'New Arrivals', url: '/new-arrivals' })
     const [dataTagList, setDataTagList] = useState(data)

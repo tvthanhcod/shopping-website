@@ -2,7 +2,7 @@ import { Link } from "react-router-dom"
 import { BsFacebook } from "react-icons/bs"
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai"
 import { FaTiktok } from "react-icons/fa"
-import Button from "../components/Button"
+import Button from "../../components/Button"
 const Footer = () => {
     return (
         <footer className="w-full h-auto mt-7">
